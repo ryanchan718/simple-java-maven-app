@@ -1,8 +1,8 @@
 pipeline {
     agent {
             docker {
-                label 'docker_home'
                 image 'maven:3.8.7-eclipse-temurin-11' 
+                label 'docker_home'
                 args '-v /root/.m2:/root/.m2' 
             }
     }
